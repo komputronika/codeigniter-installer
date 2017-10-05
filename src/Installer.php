@@ -8,7 +8,7 @@
  * @link       https://github.com/kenjis/codeigniter-composer-installer
  */
 
-namespace Kenjis\CodeIgniter;
+namespace Komputronika\CodeIgniter;
 
 use Composer\Script\Event;
 
