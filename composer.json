@@ -1,6 +1,7 @@
 {
     "name": "komputronika/codeigniter-installer",
     "description": "Package to install CodeIgniter 3 via Composer.",
+    "version": "0.0.1",
     "keywords": [
         "codeIgniter",
         "composer",
