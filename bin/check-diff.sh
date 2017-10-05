@@ -6,6 +6,7 @@
 ## @license    MIT License
 ## @copyright  2015 Kenji Suzuki
 ## @link       https://github.com/kenjis/codeigniter-composer-installer
+## @link       https://github.com/komputronika/codeigniter-installer
 
 cd `dirname $0`
 cd ..
