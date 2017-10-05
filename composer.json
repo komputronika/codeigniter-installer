@@ -15,9 +15,10 @@
         }
     ],
     "require": {
-            "codeigniter/framework": "3.1.*"
+            "codeigniter/framework": "~3.1"
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Komputronika\\CodeIgniter\\": "src/"
@@ -25,7 +26,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.0.0"
         }
     },
     "scripts" : {

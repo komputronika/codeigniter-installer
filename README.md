@@ -1,6 +1,6 @@
 # CodeIgniter Installer
 
-[![Latest Stable Version](https://poser.pugx.org/komputronika/codeigniter-installer/v/stable)](https://packagist.org/packages/komputronika/codeigniter-installer) [![Total Downloads](https://poser.pugx.org/komputronika/codeigniter-installer/downloads)](https://packagist.org/packages/komputronika/codeigniter-installer) [![Latest Unstable Version](https://poser.pugx.org/komputronika/codeigniter-installer/v/unstable)](https://packagist.org/packages/komputronika/codeigniter-installer) [![License](https://poser.pugx.org/komputronika/codeigniter-installer/license)](https://packagist.org/packages/komputronika/codeigniter-installer)
+[![Latest Stable Version](https://poser.pugx.org/komputronika/codeigniter-installer/v/stable)](https://packagist.org/packages/komputronika/codeigniter-installer) [![Total Downloads](https://poser.pugx.org/komputronika/codeigniter-installer/downloads)](https://packagist.org/packages/komputronika/codeigniter-installer) [![License](https://poser.pugx.org/komputronika/codeigniter-installer/license)](https://packagist.org/packages/komputronika/codeigniter-installer)
 
 This package installs the offical [CodeIgniter](https://github.com/bcit-ci/CodeIgniter) (version `3.1.*`) with secure folder structure via Composer.
 
@@ -129,7 +129,7 @@ You must update files manually if files in `application` folder or `index.php` c
 ## Related Projects for CodeIgniter 3.x
 
 * [CLI for CodeIgniter 3.0](https://github.com/kenjis/codeigniter-cli)
-* [ci-phpunit-test](https://github.com/kenjis/ci-phpunit-test)
+* [CI PHPUnit Test](https://github.com/kenjis/ci-phpunit-test)
 * [CodeIgniter Simple and Secure Twig](https://github.com/kenjis/codeigniter-ss-twig)
 * [CodeIgniter Doctrine](https://github.com/kenjis/codeigniter-doctrine)
 * [CodeIgniter Deployer](https://github.com/kenjis/codeigniter-deployer)
