@@ -5,7 +5,8 @@
  * @author     Kenji Suzuki <https://github.com/kenjis>
  * @license    MIT License
  * @copyright  2015 Kenji Suzuki
- * @link       https://github.com/kenjis/codeigniter-composer-installer
+ *
+ * @link       https://github.com/komputronika/codeigniter-installer
  */
 
 namespace Komputronika\CodeIgniter;
@@ -98,7 +99,7 @@ class Installer
         $io->write('$ cd <codeigniter_project_folder>');
         $io->write('$ php bin/install.php');
         $io->write('<info>Above command will show help message.</info>');
-        $io->write('See <https://github.com/kenjis/codeigniter-composer-installer> for details');
+        $io->write('See <https://github.com/komputronika/codeigniter-installer> for details');
         $io->write('==================================================');
     }
 
