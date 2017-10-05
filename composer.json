@@ -23,6 +23,11 @@
             "Komputronika\\CodeIgniter\\": "src/"
         }
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
     "scripts" : {
         "post-create-project-cmd": [
             "Komputronika\\CodeIgniter\\Installer::postInstall"
