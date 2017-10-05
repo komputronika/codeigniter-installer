@@ -1,0 +1,30 @@
+{
+    "name": "komputronika/codeigniter-installer",
+    "description": "Package to install CodeIgniter 3 via Composer.",
+    "keywords": [
+        "codeIgniter",
+        "composer",
+        "installer"
+    ],
+    "homepage": "https://github.com/komputronika/codeigniter-installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Komputronika",
+            "email": "infokomputronika@gmail.com"
+        }
+    ],
+    "require": {
+            "codeigniter/framework": "3.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Komputronika\\CodeIgniter\\": "src/"
+        }
+    },
+    "scripts" : {
+        "post-create-project-cmd": [
+            "Komputronika\\CodeIgniter\\Installer::postInstall"
+        ]
+    }
+}
