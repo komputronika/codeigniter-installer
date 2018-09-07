@@ -99,6 +99,16 @@ class Installer
                 'require' => array("twig/twig", "~1.22"),
             ),  
 
+            'codeigniter-model' => array(
+                'site'  => 'github',
+                'user'  => 'yidas',
+                'repos' => 'codeigniter-model',
+                'name'  => 'CodeIgniter 3 Active Record (ORM)',
+                'dir'   => 'libraries',
+                'msg'   => 'See https://github.com/yidas/codeigniter-model',
+                'example_branch' => 'master',
+            ),  
+
             'codeigniter-develbar' => array(
                 'site'  => 'github',
                 'user'  => 'jcsama',
