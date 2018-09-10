@@ -104,7 +104,7 @@ class Installer
                 'user'  => 'yidas',
                 'repos' => 'codeigniter-model',
                 'name'  => 'CodeIgniter 3 Active Record (ORM)',
-                'dir'   => 'libraries',
+                'dir'   => 'src',
                 'msg'   => 'See https://github.com/yidas/codeigniter-model',
                 'example_branch' => 'master',
             ),  
