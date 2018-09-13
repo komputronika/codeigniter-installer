@@ -104,6 +104,12 @@ $ php bin/install.php restserver 2.7.2
 $ php bin/install.php codeigniter-develbar master
 ```
 
+[Codeigniter Model ORM](https://github.com/komputronika/codeigniter-model):
+
+```
+$ php bin/install.php codeigniter-model master
+```
+
 ### Run PHP built-in server (PHP 5.4 or later)
 
 ```
