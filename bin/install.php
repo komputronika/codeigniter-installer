@@ -97,16 +97,18 @@ class Installer
                 'dir'   => 'libraries',
                 'msg'   => 'See https://github.com/kenjis/codeigniter-ss-twig',
                 'require' => array("twig/twig", "~1.22"),
+                'example_branch' => 'master',
             ),  
 
             'codeigniter-model' => array(
                 'site'  => 'github',
-                'user'  => 'yidas',
+                'user'  => 'komputronika',
                 'repos' => 'codeigniter-model',
                 'name'  => 'CodeIgniter 3 Active Record (ORM)',
                 'dir'   => 'core',
-                'msg'   => 'See https://github.com/yidas/codeigniter-model',
+                'msg'   => 'See https://github.com/komputronika/codeigniter-model',
                 'require' => array("yidas/codeigniter-model", ">=2.11.0"),
+                'example_branch' => 'master',
             ),  
 
             'codeigniter-develbar' => array(
