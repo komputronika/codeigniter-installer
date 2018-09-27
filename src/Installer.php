@@ -15,7 +15,8 @@ use Composer\Script\Event;
 
 class Installer
 {
-    const DOCROOT = 'public';
+    //const DOCROOT = 'public';
+    const DOCROOT = '';
 
     /**
      * Composer post install script
@@ -26,24 +27,25 @@ class Installer
     {
         // Copy CodeIgniter files
         self::recursiveCopy('vendor/codeigniter/framework/application', 'application');
-        mkdir(static::DOCROOT, 0755);
+        //mkdir(static::DOCROOT, 0755);
         copy('vendor/codeigniter/framework/index.php', static::DOCROOT . '/index.php');
         copy('dot.htaccess', static::DOCROOT . '/.htaccess');
         copy('vendor/codeigniter/framework/.gitignore', '.gitignore');
 
         // Fix paths in index.php
-        $file = static::DOCROOT . '/index.php';
+        $file = static::DOCROOT . 'index.php';
+
         $contents = file_get_contents($file);
         $contents = str_replace(
             '$system_path = \'system\';',
-            '$system_path = \'../vendor/codeigniter/framework/system\';',
+            '$system_path = \'vendor/codeigniter/framework/system\';',
             $contents
         );
-        $contents = str_replace(
+        /*$contents = str_replace(
             '$application_folder = \'application\';',
             '$application_folder = \'../application\';',
             $contents
-        );
+        );*/
         file_put_contents($file, $contents);
 
         // Enable Composer Autoloader
@@ -51,7 +53,8 @@ class Installer
         $contents = file_get_contents($file);
         $contents = str_replace(
             '$config[\'composer_autoload\'] = FALSE;',
-            '$config[\'composer_autoload\'] = realpath(APPPATH . \'../vendor/autoload.php\');',
+            //'$config[\'composer_autoload\'] = realpath(APPPATH . \'../vendor/autoload.php\');',
+            '$config[\'composer_autoload\'] = realpath(APPPATH . \'vendor/autoload.php\');',
             $contents
         );
 
@@ -91,7 +94,7 @@ class Installer
         $io = $event->getIO();
         $io->write('==================================================');
         $io->write(
-            '<info>`public/.htaccess` was installed. If you don\'t need it, please remove it.</info>'
+            '<info>`File .htaccess` was installed. If you don\'t need it, please remove it.</info>'
         );
         $io->write(
             '<info>If you want to install translations for system messages or some third party libraries,</info>'
