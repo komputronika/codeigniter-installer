@@ -53,8 +53,9 @@ class Installer
         $contents = file_get_contents($file);
         $contents = str_replace(
             '$config[\'composer_autoload\'] = FALSE;',
-            //'$config[\'composer_autoload\'] = realpath(APPPATH . \'../vendor/autoload.php\');',
-            '$config[\'composer_autoload\'] = realpath(APPPATH . \'vendor/autoload.php\');',
+            '$config[\'composer_autoload\'] = realpath(APPPATH . \'../vendor/autoload.php\');',
+            //'$config[\'composer_autoload\'] = realpath(APPPATH . \'vendor/autoload.php\');',
+            //'$config[\'composer_autoload\'] = \'vendor/autoload.php\';',
             $contents
         );
 
